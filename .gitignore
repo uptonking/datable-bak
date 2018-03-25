@@ -1,0 +1,9 @@
+.idea/
+*.iml
+target/
+build/
+node_modules/
+package-lock.json
+
+bak/
+public/bundle.js
