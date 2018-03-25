@@ -6,13 +6,14 @@
     <groupId>player.data</groupId>
     <version>1.0.0</version>
     <packaging>pom</packaging>
+    <name>datable</name>
+    <description>maybe the best open source alternative to excel</description>
 
     <modules>
         <module>datasheet</module>
         <module>jservlet</module>
         <module>small</module>
     </modules>
-    <name>datable - open source backend for spreadsheet operations</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

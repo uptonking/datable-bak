@@ -1,5 +1,5 @@
 # datable  
-open source backend for data spreadsheet operations.  
+>maybe the best open source alternative to excel.  
 
  :warning:  datable is under development, far from being stable to be used yet. 
 

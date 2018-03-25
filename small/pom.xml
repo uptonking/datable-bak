@@ -73,7 +73,6 @@
                 <version>2.1</version>
                 <configuration>
                     <port>8999</port>
-                    <!--网站路径-->
                     <path>/</path>
                 </configuration>
             </plugin>
