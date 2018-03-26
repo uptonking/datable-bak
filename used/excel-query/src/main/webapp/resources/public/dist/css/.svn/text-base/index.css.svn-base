@@ -1,0 +1,123 @@
+.page{
+	font-family: "微软雅黑";
+     color: #373737;
+     font-size: .65rem;
+}
+
+.bar-nav>span{
+	font-size: .75rem;
+	border-left: 1px solid #004995;
+	color: #004995;
+	padding: 0rem 0.2rem;
+    margin: .55rem .3rem;
+    line-height: 1.2rem;
+    display: inline-block;
+     padding-right: 0;
+}
+.right_phone{
+	
+	 line-height: 2.2rem;
+    display: inline-block;
+}
+.right_phone span{
+	color:  #373737;
+	font-size: .65rem;
+}
+.order span{
+	font-size: .65rem;
+	font-weight: 600;
+	
+}
+.order img{
+	vertical-align: middle;
+}
+.orderPrice{
+	font-size: .65rem;
+	line-height: 1.3rem;
+	color:  #373737!important;
+}
+.orderPrice span{
+	color: #FF8300;
+	font-weight: 600;
+}
+.item-inner .item-text{
+	height: auto;
+	padding-left: 1.4rem;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+    display: block;
+    font-size: .65rem;
+}
+.payMoney span{
+	color: #FF8300;
+    font-weight: 600;
+    font-size:.6rem;
+}
+
+.liActive{
+	border:1px solid #99B0D8;
+}
+.payWay{
+	white-space:normal!important;
+	margin-right:.15rem;
+	font-size:.65rem;
+}
+.payWay span{
+	margin-left:.3rem;
+	font-size:.6rem;
+}
+.headerLogo{
+	border-bottom:none;
+}
+.headerLogo img{
+	position: absolute;
+	left:-.5rem;
+	top: 0;
+}
+.PAY{
+	border-top: none;
+}
+.PAY span{
+	padding:.3rem 2rem;
+	color: #FFF;
+	background: #FF8300;
+}
+.otherLogo{
+	border-bottom:none;
+}
+.otherLogo img{
+	width:100px; 
+	height:30px;
+    position: absolute;
+	left:-.5rem;
+	top: 0;
+}
+.otherPayway{
+	padding:.3rem .75rem .5rem .75rem;
+}
+.otherPayway span{
+	margin-right: .2rem;
+}
+.otherLogo span{
+	width: 90px;
+	text-align: center;height: 30px;
+	line-height: 30px;
+	color: #FFF;
+	font-size: 13px;
+	z-index: 999;
+	position: absolute;
+	left:-1%;
+	top: -2px;
+}
+
+@media (max-width: 340px){
+    .bar-nav>span{
+	font-size: .68rem;
+    }
+}
+
+.show_pay{
+	color: #FF8300;
+}
+
+

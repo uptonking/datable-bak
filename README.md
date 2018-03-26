@@ -26,7 +26,9 @@ start from [http://localhost:8999](http://localhost:8999)
 - [ ] `todo3` 计划  
 - [ ] todo2
 
-- [x] todo1
+- [ ] 为列指定数据类型，便于分组聚合
+
+- [x] 简单excel文件的显示
 
 ## License
 
