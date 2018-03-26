@@ -20,6 +20,7 @@ public class TestDefaultHttpBodyParser {
 
     @Test
     public void test() throws IOException {
+
         byte[] bytes = BODY.getBytes("utf-8");
         HttpParserContext.setInputStream(
                 new ByteArrayInputStream(bytes));
