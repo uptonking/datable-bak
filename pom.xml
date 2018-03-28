@@ -13,6 +13,8 @@
         <module>datasheet</module>
         <module>jservlet</module>
         <module>small</module>
+        <module>ibatis2</module>
+        <module>ibatis2-demo</module>
     </modules>
 
     <properties>

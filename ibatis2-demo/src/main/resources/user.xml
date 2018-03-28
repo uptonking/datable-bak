@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap  PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd"> 
+<sqlMap namespace="user"> 
+
+	<typeAlias alias="USER" type="com.howtodoinjava.ibatis.demo.dto.UserTEO" />
+
+	<resultMap id="userResultMap" class="USER">
+		<result property="id" column="ID" />
+  		<result property="name" column="NAME" />
+  		<result property="email" column="EMAIL" />
+  		<result property="password" column="PASSWORD" />
+  		<result property="status" column="STATUS" />
+	</resultMap>
+	
+	<select id="getUserById" parameterClass="java.lang.Integer" resultMap="userResultMap">
+		  SELECT * FROM USERINFO WHERE ID = #value#
+	</select>
+	
+	<select id="getMaxId" resultClass="java.lang.Integer">
+		  SELECT MAX(ID) FROM USERINFO
+	</select>
+	
+	<insert id="addUser" parameterClass="USER">
+		INSERT INTO USERINFO (ID,NAME,EMAIL,PASSWORD,STATUS)
+		 VALUES(#id#,#name#,#email#,#password#,#status#);
+	</insert>
+	
+	<delete id="deleteUserById" parameterClass="java.lang.Integer">
+		  DELETE FROM USERINFO WHERE ID = #value#
+	</delete>
+	
+</sqlMap>
