@@ -11,6 +11,8 @@
 #### todo  
 - [ ] 算术计算
 
+- [ ] ibatis2-demo 第2次执行demo会变慢
+
 #### later 
 - [ ] 重构操作类型
 - [ ] 分离excel公式

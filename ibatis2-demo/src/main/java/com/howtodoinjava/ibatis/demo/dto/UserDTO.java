@@ -1,7 +1,8 @@
 package com.howtodoinjava.ibatis.demo.dto;
 
 
-public class UserTEO {
+public class UserDTO {
+
     private Integer id;
     private String name;
     private String email;
