@@ -10,12 +10,9 @@
     <description>maybe the best open source alternative to excel</description>
 
     <modules>
+        <module>jweb</module>
+        <module>db</module>
         <module>datasheet</module>
-        <module>jservlet</module>
-        <module>small</module>
-        <module>ibatis2</module>
-        <module>ibatis2-demo</module>
-        <module>ibatis2-jpetstore</module>
     </modules>
 
     <properties>

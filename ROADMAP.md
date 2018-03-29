@@ -11,7 +11,6 @@
 #### todo  
 - [ ] 算术计算
 
-- [ ] ibatis2-demo 第2次执行demo会变慢
 
 #### later 
 - [ ] 重构操作类型
@@ -22,6 +21,10 @@
 - [ ] 矢量图表
 - [ ] 导出ppt
 
+
+## ibatis 
+
+- [ ] ibatis2 xml配置参考webmagic的注解实现  
 
 
 

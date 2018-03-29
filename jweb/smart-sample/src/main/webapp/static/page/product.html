@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <title>Smart Smaple - Product</title>
+    <link rel="stylesheet" href="../asset/style/global.css"/>
+</head>
+<body>
+
+<div id="header">
+    <div id="logo">Smart Sample</div>
+    <div id="oper">
+        <button type="button" id="logout">Logout</button>
+    </div>
+</div>
+
+<div id="content">
+    <div id="main">
+        <div class="css-panel">
+            <div class="css-panel-header">
+                <div class="css-left">
+                    <h3>Product List</h3>
+                </div>
+                <div class="css-right">
+                    <a href="product_create.html">New Product</a>
+                </div>
+            </div>
+            <div class="css-panel-content">
+                <div class="css-row">
+                    <div class="css-left">
+                        <form id="product_search_form">
+                            <div class="css-search">
+                                <input type="text" id="product_name" placeholder="Product Name"/>
+                                <span class="css-search-button">
+                                    <button type="submit">Search</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="css-right">
+                        <div id="product_pager"></div>
+                    </div>
+                </div>
+                <table id="product_table" class="css-table">
+                    <thead>
+                        <tr>
+                            <td>Product Type</td>
+                            <td>Product Name</td>
+                            <td>Product Code</td>
+                            <td>Price</td>
+                            <td>Description</td>
+                            <td class="css-width-75">Action</td>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+    <div id="copyright">Copyright @ 2013</div>
+</div>
+
+<script id="product_table_template" type="text/template">
+    <tr data-id="{product.id}" data-name="{product.productName}">
+        <td>{productType.productTypeName}</td>
+        <td><a href="#" class="ext-product-view">{product.productName}</a></td>
+        <td>{product.productCode}</td>
+        <td>{product.price}</td>
+        <td>{product.description}</td>
+        <td>
+            <a href="#" class="ext-product-edit">Edit</a>
+            <a href="#" class="ext-product-delete">Delete</a>
+        </td>
+    </tr>
+</script>
+
+<script type="text/javascript" src="../asset/lib/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../asset/lib/jquery-form/jquery.form.min.js"></script>
+<script type="text/javascript" src="../asset/script/global.js"></script>
+<script type="text/javascript" src="../script/product.js"></script>
+
+</body>
+</html>

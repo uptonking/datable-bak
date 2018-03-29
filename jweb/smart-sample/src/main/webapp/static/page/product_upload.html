@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <title>Smart Smaple - Upload Product Picture</title>
+    <link rel="stylesheet" href="../asset/style/global.css"/>
+</head>
+<body>
+
+<form id="upload_form" enctype="multipart/form-data">
+    <input type="hidden" name="path" value="product"/>
+    <p>
+        <label for="file">Picture:</label>
+        <input type="file" id="file" name="file"/>
+        <button type="submit">Upload</button>
+    </p>
+</form>
+<br/>
+<div id="console"></div>
+
+<script type="text/javascript" src="../asset/lib/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../asset/lib/jquery-form/jquery.form.min.js"></script>
+<script type="text/javascript" src="../asset/script/global.js"></script>
+<script type="text/javascript" src="../script/product_upload.js"></script>
+
+</body>
+</html>
