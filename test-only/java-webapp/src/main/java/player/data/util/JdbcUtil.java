@@ -1,16 +1,16 @@
-package player.data.jdbc;
+package player.data.util;
+
+import com.mchange.v2.c3p0.ComboPooledDataSource;
+import org.apache.commons.dbutils.ResultSetHandler;
 
 import javax.sql.DataSource;
 import java.io.InputStream;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
-
-import com.mchange.v2.c3p0.ComboPooledDataSource;
 
 public class JdbcUtil {
 
@@ -165,7 +165,7 @@ public class JdbcUtil {
              * 为了能够让用户提供结果集的处理策略，需要对用户暴露出一个结果集处理接口ResultSetHandler
              * 用户只要实现了ResultSetHandler接口，那么query方法内部就知道用户要如何处理结果集了
              */
-            return rsh.handler(rs);
+            return rsh.handle(rs);
 
         } finally {
             release(conn, st, rs);
