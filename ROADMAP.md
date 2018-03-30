@@ -26,5 +26,12 @@
 
 - [ ] ibatis2 xml配置参考webmagic的注解实现  
 
+## java web
+
+- ioc、aop
+- orm、mvc
+
+
+
 
 

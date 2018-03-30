@@ -10,17 +10,24 @@ import java.util.Enumeration;
 import java.util.List;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
+
 import org.apache.log4j.Logger;
 
 /**
- * 获取指定包下的所有类
+ * 类加载与反射操作 工具类
  */
 public class ClassUtil {
 
     private static final Logger logger = Logger.getLogger(ClassUtil.class);
 
+    // 获取类加载器
+    public static ClassLoader getClassLoader() {
+        return Thread.currentThread().getContextClassLoader();
+    }
+
     // 获取指定包名下的所有类
     public static List<Class<?>> getClassList(String packageName, boolean isRecursive) {
+
         List<Class<?>> classList = new ArrayList<Class<?>>();
         try {
             Enumeration<URL> urls = Thread.currentThread().getContextClassLoader().getResources(packageName.replace(".", "/"));
@@ -40,9 +47,11 @@ public class ClassUtil {
                             String jarEntryName = jarEntry.getName();
                             if (jarEntryName.endsWith(".class")) {
                                 String className = jarEntryName.substring(0, jarEntryName.lastIndexOf(".")).replaceAll("/", ".");
+
                                 if (isRecursive || className.substring(0, className.lastIndexOf(".")).equals(packageName)) {
                                     classList.add(Class.forName(className));
                                 }
+
                             }
                         }
                     }
