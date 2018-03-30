@@ -2,12 +2,30 @@
 
 ## Servlet相关
 
+- url-pattern    
+    - `<url-pattern>/</url-pattern>`：会匹配到/springmvc这样的路径型url，不会匹配到模式为*.jsp这样的后缀型url    
+    - `<url-pattern>/*</url-pattern>`：会匹配所有的url：路径型的和后缀型的url(包括/springmvc，.jsp，.js和*.html等)   
 - servlet is just an implementation of HTTP request and response mechanism based on Java.
 
 - cookie
-
 - session
 
+- servlet 3新增9个注解
+    - @HandlesTypes
+    - @HttpConstraint
+    - @HttpMethodConstraint
+    - @MultipartConfig
+    - @ServletSecurity
+    - @WebFilter
+    - @WebInitParam
+    - @WebListener
+    - @WebServlet
+
+- spring常用注解
+    - @Component 所有受Spring管理的组件的通用注解
+    - @Controller
+    - @Service
+    - @Repository 对应数据访问层bean
 
 
 ## java相关

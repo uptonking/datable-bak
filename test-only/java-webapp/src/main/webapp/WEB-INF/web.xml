@@ -1,0 +1,44 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <display-name>java-webapp</display-name>
+
+    <servlet>
+        <servlet-name>AnnoControllerProcessorServlet</servlet-name>
+        <servlet-class>player.data.servlet3.AnnoControllerProcessorServlet</servlet-class>
+        <init-param>
+            <param-name>basePackage</param-name>
+            <param-value>player.data.controller</param-value>
+            <description>配置要扫描包及其子包, 如果有多个包,以逗号分隔</description>
+            <!-- <param-value>me.gacl.web.controller</param-value> -->
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AnnoControllerProcessorServlet</servlet-name>
+        <!-- 拦截所有以.do后缀结尾的请求 -->
+        <!--<url-pattern>/*</url-pattern>-->
+        <url-pattern>*.do</url-pattern>
+    </servlet-mapping>
+
+
+    <!--<filter>-->
+    <!--<filter-name>AnnoProcessorFilter</filter-name>-->
+    <!--<description>注解处理过滤器</description>-->
+    <!--<filter-class>player.data.filter.AnnoWebServletxProcessorFilter</filter-class>-->
+    <!--<init-param>-->
+    <!--<param-name>basePackage</param-name>-->
+    <!--<param-value>player.data.servlet3</param-value>-->
+    <!--<description>配置要扫描包及其子包, 如果有多个包,以逗号分隔</description>-->
+    <!--&lt;!&ndash; <param-value>me.gacl.web.controller</param-value> &ndash;&gt;-->
+    <!--</init-param>-->
+    <!--</filter>-->
+    <!--<filter-mapping>-->
+    <!--<filter-name>AnnoProcessorFilter</filter-name>-->
+    <!--&lt;!&ndash; 拦截后缀是/的请求 &ndash;&gt;-->
+    <!--<url-pattern>/*</url-pattern>-->
+    <!--</filter-mapping>-->
+
+</web-app>

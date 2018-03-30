@@ -1,14 +1,16 @@
 package com.smart.framework.base;
 
 import com.smart.framework.util.JSONUtil;
+
 import java.io.Serializable;
+
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 import org.apache.commons.lang.builder.ToStringStyle;
 
 /**
- * 普通bean公共抽象类
+ * 基本bean 抽象类
  */
 public abstract class BaseBean implements Serializable {
 
@@ -30,4 +32,5 @@ public abstract class BaseBean implements Serializable {
     public String toJson() {
         return JSONUtil.toJSON(this);
     }
+
 }

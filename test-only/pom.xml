@@ -7,16 +7,15 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>jweb</artifactId>
+    <artifactId>test-only</artifactId>
     <packaging>pom</packaging>
 
-
+    <name>test-only</name>
     <modules>
-        <module>jservlet</module>
-        <module>small</module>
-        <module>smart-framework</module>
-        <module>smart-sample</module>
-        <module>play-servlet-rest</module>
-        <module>play-ioc</module>
+        <module>test-spring</module>
+        <module>java-quickstart</module>
+        <module>java-webapp</module>
     </modules>
+
+
 </project>
